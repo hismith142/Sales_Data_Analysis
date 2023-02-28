@@ -27,3 +27,6 @@ Python's pandas library made light work of the questions I had thought up. To ge
 ### Step 5: Machine Learning Model
 The goal of this model was to be able to identify what a user would purchase as soon as they logged on the site, no purchase history required. This way, the company could tailor specific promotional material to consumers without losing too much of their profit margin. To do this, I prepared the data for training using one-hot encoding. I assembled a data pipeline where I tested several popular classification models and measured their accuracy. After determining the highest performing model, I exported it using the pickles library in python such that the model could make predictions on future data without the need for retraining.
 
+### Step 6: Tableau
+To further visualize the data, I constructed a dashboard of my findings to Tableau which would in theory be updated with new data as the database grows in size. In order to do this, however, I would also need to create a data pipeline from the server to Tableau as reformatting was required.
+
