@@ -19,5 +19,11 @@ Additionally, column datatypes were updated to reflect the needs of analysis lat
 I spent some time thinking about the questions a company might ask me to answer given the dataset. Some might include:
 - The company is increasing its marketing budget; what is the optimal time of day to show advertisements to potential consumers?
 - Given popular pairings of items, what would be an example of a promotional deal that would entice consumers to purchase from the company?
-- 
+- And so on...
+
+### Step 4: Analyze Data
+Python's pandas library made light work of the questions I had thought up. To get a better idea of what I was seeing, however, I used the matplotlib library to visualize my findings.
+
+### Step 5: Machine Learning Model
+The goal of this model was to be able to identify what a user would purchase as soon as they logged on the site, no purchase history required. This way, the company could tailor specific promotional material to consumers without losing too much of their profit margin. To do this, I prepared the data for training using one-hot encoding. I assembled a data pipeline where I tested several popular classification models and measured their accuracy. After determining the highest performing model, I exported it using the pickles library in python such that the model could make predictions on future data without the need for retraining.
 
